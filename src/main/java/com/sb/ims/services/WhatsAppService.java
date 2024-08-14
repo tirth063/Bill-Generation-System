@@ -17,8 +17,8 @@ public class WhatsAppService {
         String customerPhoneNumber = "+" + customerNumber;
 
         Message.creator(
-                new PhoneNumber("whatsapp:+919925427044"),
-                new PhoneNumber("whatsapp:+14155238886"),
+                new PhoneNumber("whatsapp:+91*"),
+                new PhoneNumber("whatsapp:+1*"),
                 message
         ).create();
 

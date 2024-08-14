@@ -77,7 +77,7 @@ public class ReportService {
         MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-        helper.setTo("unsoldconsol@gmail.com"); // Replace with admin's email
+        helper.setTo("admin@gmail.com"); // Replace with admin's email
         helper.setSubject("Daily Product and Stock Report");
         helper.setText("Please find attached the daily product and stock report.");
 

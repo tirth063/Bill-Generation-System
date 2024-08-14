@@ -20,7 +20,7 @@ public class AlertService {
 
     private void notifyAdminLowStock(String productName , int inventory) {
         SimpleMailMessage email = new SimpleMailMessage();
-        email.setTo("unsoldconsol@gmail.com"); // Admin email
+        email.setTo("admin@gmail.com"); // Admin email
         email.setSubject("Low Stock Alert for " + productName);
         email.setText("Warning: Stock for product " + productName + " is low. Current quantity: " + inventory);
 
@@ -30,7 +30,7 @@ public class AlertService {
 
     public void sendAlert(String productName , int inventory) {
         String message = String.format("Alert: The inventory for product '%s' is below the threshold. Remaining stock: %d", productName, inventory);
-        smsService.sendSms("916351705018", message);
+        smsService.sendSms("9100000000", message);
         notifyAdminLowStock(productName , inventory);
     }
 }

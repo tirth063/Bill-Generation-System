@@ -117,7 +117,7 @@ public class OrderService {
 
     private ResponseEntity<?> handlePaymentFailure(String message) {
         // Logic to send SMS or notification to the customer/admin
-        smsService.sendSms("916351705018", message); // Replace with actual customer phone number
+        smsService.sendSms("9100000000", message); // Replace with actual customer phone number
         return new ResponseEntity<>(message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
